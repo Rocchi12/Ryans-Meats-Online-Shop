@@ -1,0 +1,213 @@
+[debug] [2022-11-09T05:09:36.797Z] ----------------------------------------------------------------------
+[debug] [2022-11-09T05:09:36.798Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy --only functions
+[debug] [2022-11-09T05:09:36.798Z] CLI Version:   11.8.0
+[debug] [2022-11-09T05:09:36.799Z] Platform:      darwin
+[debug] [2022-11-09T05:09:36.799Z] Node Version:  v16.16.0
+[debug] [2022-11-09T05:09:36.800Z] Time:          Wed Nov 09 2022 00:09:36 GMT-0500 (Eastern Standard Time)
+[debug] [2022-11-09T05:09:36.800Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-11-09T05:09:36.844Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-11-09T05:09:36.844Z] > authorizing via signed-in user (charlierocchi@gmail.com)
+[debug] [2022-11-09T05:09:36.845Z] [iam] checking project ryansmeats-697f9 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2022-11-09T05:09:36.846Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/ryansmeats-697f9:testIamPermissions [none]
+[debug] [2022-11-09T05:09:36.846Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/ryansmeats-697f9:testIamPermissions x-goog-quota-user=projects/ryansmeats-697f9
+[debug] [2022-11-09T05:09:36.846Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ryansmeats-697f9:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2022-11-09T05:09:37.141Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/ryansmeats-697f9:testIamPermissions 200
+[debug] [2022-11-09T05:09:37.141Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ryansmeats-697f9:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2022-11-09T05:09:37.142Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/ryansmeats-697f9/serviceAccounts/ryansmeats-697f9@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2022-11-09T05:09:37.142Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/ryansmeats-697f9/serviceAccounts/ryansmeats-697f9@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2022-11-09T05:09:37.383Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/ryansmeats-697f9/serviceAccounts/ryansmeats-697f9@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2022-11-09T05:09:37.384Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/ryansmeats-697f9/serviceAccounts/ryansmeats-697f9@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[info] 
+[info] === Deploying to 'ryansmeats-697f9'...
+[info] 
+[info] i  deploying functions 
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
+[info] ✔  functions: Finished running predeploy script. 
+[debug] [2022-11-09T05:09:38.780Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ryansmeats-697f9 [none]
+[debug] [2022-11-09T05:09:39.183Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ryansmeats-697f9 200
+[debug] [2022-11-09T05:09:39.184Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ryansmeats-697f9 {"projectId":"ryansmeats-697f9","projectNumber":"637964071752","displayName":"ryansmeats","name":"projects/ryansmeats-697f9","resources":{"hostingSite":"ryansmeats-697f9","storageBucket":"ryansmeats-697f9.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_9d0010c1-8caa-4472-b1f1-3649272dde14"}
+[info] i  functions: ensuring required API cloudfunctions.googleapis.com is enabled... 
+[info] i  functions: ensuring required API cloudbuild.googleapis.com is enabled... 
+[info] i  artifactregistry: ensuring required API artifactregistry.googleapis.com is enabled... 
+[debug] [2022-11-09T05:09:39.187Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ryansmeats-697f9/services/cloudfunctions.googleapis.com [none]
+[debug] [2022-11-09T05:09:39.189Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ryansmeats-697f9/services/runtimeconfig.googleapis.com [none]
+[debug] [2022-11-09T05:09:39.191Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ryansmeats-697f9/services/cloudbuild.googleapis.com [none]
+[debug] [2022-11-09T05:09:39.192Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ryansmeats-697f9/services/artifactregistry.googleapis.com [none]
+[debug] [2022-11-09T05:09:39.628Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ryansmeats-697f9/services/artifactregistry.googleapis.com 200
+[debug] [2022-11-09T05:09:39.628Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ryansmeats-697f9/services/artifactregistry.googleapis.com [omitted]
+[warn] ⚠  artifactregistry: missing required API artifactregistry.googleapis.com. Enabling now... 
+[debug] [2022-11-09T05:09:39.629Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/ryansmeats-697f9/services/artifactregistry.googleapis.com:enable [none]
+[debug] [2022-11-09T05:09:39.632Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ryansmeats-697f9/services/runtimeconfig.googleapis.com 200
+[debug] [2022-11-09T05:09:39.632Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ryansmeats-697f9/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2022-11-09T05:09:39.634Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ryansmeats-697f9/services/cloudbuild.googleapis.com 200
+[debug] [2022-11-09T05:09:39.634Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ryansmeats-697f9/services/cloudbuild.googleapis.com [omitted]
+[warn] ⚠  functions: missing required API cloudbuild.googleapis.com. Enabling now... 
+[debug] [2022-11-09T05:09:39.635Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/ryansmeats-697f9/services/cloudbuild.googleapis.com:enable [none]
+[debug] [2022-11-09T05:09:40.005Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ryansmeats-697f9/services/cloudfunctions.googleapis.com 200
+[debug] [2022-11-09T05:09:40.006Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ryansmeats-697f9/services/cloudfunctions.googleapis.com [omitted]
+[info] ✔  functions: required API cloudfunctions.googleapis.com is enabled 
+[debug] [2022-11-09T05:09:40.135Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/ryansmeats-697f9/services/artifactregistry.googleapis.com:enable 200
+[debug] [2022-11-09T05:09:40.135Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/ryansmeats-697f9/services/artifactregistry.googleapis.com:enable [omitted]
+[debug] [2022-11-09T05:09:40.207Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/ryansmeats-697f9/services/cloudbuild.googleapis.com:enable 200
+[debug] [2022-11-09T05:09:40.207Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/ryansmeats-697f9/services/cloudbuild.googleapis.com:enable [omitted]
+[debug] [2022-11-09T05:09:50.140Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ryansmeats-697f9/services/artifactregistry.googleapis.com [none]
+[debug] [2022-11-09T05:09:50.210Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ryansmeats-697f9/services/cloudbuild.googleapis.com [none]
+[debug] [2022-11-09T05:09:50.493Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ryansmeats-697f9/services/artifactregistry.googleapis.com 200
+[debug] [2022-11-09T05:09:50.493Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ryansmeats-697f9/services/artifactregistry.googleapis.com [omitted]
+[info] ✔  artifactregistry: required API artifactregistry.googleapis.com is enabled 
+[debug] [2022-11-09T05:09:50.543Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ryansmeats-697f9/services/cloudbuild.googleapis.com 200
+[debug] [2022-11-09T05:09:50.543Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ryansmeats-697f9/services/cloudbuild.googleapis.com [omitted]
+[info] ✔  functions: required API cloudbuild.googleapis.com is enabled 
+[debug] [2022-11-09T05:09:50.545Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ryansmeats-697f9/adminSdkConfig [none]
+[debug] [2022-11-09T05:09:50.795Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ryansmeats-697f9/adminSdkConfig 200
+[debug] [2022-11-09T05:09:50.796Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ryansmeats-697f9/adminSdkConfig {"projectId":"ryansmeats-697f9","storageBucket":"ryansmeats-697f9.appspot.com","locationId":"us-central"}
+[debug] [2022-11-09T05:09:50.796Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/ryansmeats-697f9/configs [none]
+[debug] [2022-11-09T05:09:51.045Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/ryansmeats-697f9/configs 200
+[debug] [2022-11-09T05:09:51.046Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/ryansmeats-697f9/configs {"configs":[{"name":"projects/ryansmeats-697f9/configs/stripe"}]}
+[debug] [2022-11-09T05:09:51.047Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/ryansmeats-697f9/configs/stripe/variables [none]
+[debug] [2022-11-09T05:09:51.193Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/ryansmeats-697f9/configs/stripe/variables 200
+[debug] [2022-11-09T05:09:51.194Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/ryansmeats-697f9/configs/stripe/variables {"variables":[{"name":"projects/ryansmeats-697f9/configs/stripe/variables/secret_key","updateTime":"2022-11-09T04:24:15.271200792Z"}]}
+[debug] [2022-11-09T05:09:51.194Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/ryansmeats-697f9/configs/stripe/variables/secret_key [none]
+[debug] [2022-11-09T05:09:51.323Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/ryansmeats-697f9/configs/stripe/variables/secret_key 200
+[debug] [2022-11-09T05:09:51.324Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/ryansmeats-697f9/configs/stripe/variables/secret_key {"name":"projects/ryansmeats-697f9/configs/stripe/variables/secret_key","updateTime":"2022-11-09T04:24:15.271200792Z","text":"sk_test_51LlQV3KsqmBXTMQLKFm4TMaL5zFCDPB0brHc31w7P11XssPWQSRfokGWDvOJq9EkQXIcpnEwt5hSSSyW8361G6wz00sh7moXjP"}
+[info] i  functions: preparing codebase default for deployment 
+[debug] [2022-11-09T05:09:51.328Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-11-09T05:09:52.402Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.17.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-11-09T05:09:52.403Z] Building nodejs source
+[debug] [2022-11-09T05:09:52.404Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-11-09T05:09:52.779Z] Serving at port 9005
+
+[debug] [2022-11-09T05:09:52.853Z] Got response from /__/functions.yaml {"endpoints":{"createStripeCheckout":{"platform":"gcfv1","labels":{},"callableTrigger":{},"entryPoint":"createStripeCheckout"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-11-09T05:09:52.861Z] shutdown requested via /__/quitquitquit
+
+[info] i  functions: preparing functions directory for uploading... 
+[info] i  functions: packaged /Users/charlierocchi/Desktop/projects/ryansMeats/functions (75.76 KB) for uploading 
+[debug] [2022-11-09T05:09:52.906Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v1/projects/ryansmeats-697f9/locations/-/functions [none]
+[debug] [2022-11-09T05:09:53.416Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v1/projects/ryansmeats-697f9/locations/-/functions 200
+[debug] [2022-11-09T05:09:53.416Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v1/projects/ryansmeats-697f9/locations/-/functions {}
+[debug] [2022-11-09T05:09:53.417Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v2alpha/projects/ryansmeats-697f9/locations/-/functions [none]
+[debug] [2022-11-09T05:09:53.971Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v2alpha/projects/ryansmeats-697f9/locations/-/functions 200
+[debug] [2022-11-09T05:09:53.971Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v2alpha/projects/ryansmeats-697f9/locations/-/functions {}
+[debug] [2022-11-09T05:09:53.982Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ryansmeats-697f9 [none]
+[debug] [2022-11-09T05:09:54.302Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ryansmeats-697f9 200
+[debug] [2022-11-09T05:09:54.302Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ryansmeats-697f9 {"projectId":"ryansmeats-697f9","projectNumber":"637964071752","displayName":"ryansmeats","name":"projects/ryansmeats-697f9","resources":{"hostingSite":"ryansmeats-697f9","storageBucket":"ryansmeats-697f9.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_9d0010c1-8caa-4472-b1f1-3649272dde14"}
+[debug] [2022-11-09T05:09:54.304Z] >>> [apiv2][query] POST https://cloudfunctions.googleapis.com/v1/projects/ryansmeats-697f9/locations/us-central1/functions:generateUploadUrl [none]
+[debug] [2022-11-09T05:09:54.304Z] >>> [apiv2][body] POST https://cloudfunctions.googleapis.com/v1/projects/ryansmeats-697f9/locations/us-central1/functions:generateUploadUrl {}
+[debug] [2022-11-09T05:10:03.760Z] <<< [apiv2][status] POST https://cloudfunctions.googleapis.com/v1/projects/ryansmeats-697f9/locations/us-central1/functions:generateUploadUrl 200
+[debug] [2022-11-09T05:10:03.760Z] <<< [apiv2][body] POST https://cloudfunctions.googleapis.com/v1/projects/ryansmeats-697f9/locations/us-central1/functions:generateUploadUrl {"uploadUrl":"https://storage.googleapis.com/uploads-165489373824.us-central1.cloudfunctions.appspot.com/f28039fc-9b8e-457c-985c-2071947ea5b6.zip?GoogleAccessId=service-637964071752@gcf-admin-robot.iam.gserviceaccount.com&Expires=1667972403&Signature=I9aE4%2BCZzZj0g6Va5uo1RGqWeKcGd8UIQdHfMFC5OwzX%2BA0KN403O7LsI2Rwic4Ya0wiEphR88cy14Mt00mJAjQekOeeyP80%2FXJLw5dwBDHIa16W%2BFyfArxQbncpIqL6e2Y3wr%2B03pHEDVPc325%2FIONNluJTgXAzh%2FqAZXGf3gy6VGnGt6cGmFaf5%2BJEluSKgLQEvT4cUO6jRZNwXkiQWx4dBchYTczhZpBKs138%2BsdxjTQ5IQIlroacdqWf3E3Icrf7DG3OWsyGE69%2BmMzDqToTq6mINgOzNY3zUR1jY9%2Fc3sedeDkK21RjDDRazQ2PZCyxzyERNkD7H%2FXi35Za%2BA%3D%3D"}
+[debug] [2022-11-09T05:10:03.763Z] >>> [apiv2][query] PUT https://storage.googleapis.com/uploads-165489373824.us-central1.cloudfunctions.appspot.com/f28039fc-9b8e-457c-985c-2071947ea5b6.zip GoogleAccessId=service-637964071752%40gcf-admin-robot.iam.gserviceaccount.com&Expires=1667972403&Signature=I9aE4%2BCZzZj0g6Va5uo1RGqWeKcGd8UIQdHfMFC5OwzX%2BA0KN403O7LsI2Rwic4Ya0wiEphR88cy14Mt00mJAjQekOeeyP80%2FXJLw5dwBDHIa16W%2BFyfArxQbncpIqL6e2Y3wr%2B03pHEDVPc325%2FIONNluJTgXAzh%2FqAZXGf3gy6VGnGt6cGmFaf5%2BJEluSKgLQEvT4cUO6jRZNwXkiQWx4dBchYTczhZpBKs138%2BsdxjTQ5IQIlroacdqWf3E3Icrf7DG3OWsyGE69%2BmMzDqToTq6mINgOzNY3zUR1jY9%2Fc3sedeDkK21RjDDRazQ2PZCyxzyERNkD7H%2FXi35Za%2BA%3D%3D
+[debug] [2022-11-09T05:10:03.763Z] >>> [apiv2][body] PUT https://storage.googleapis.com/uploads-165489373824.us-central1.cloudfunctions.appspot.com/f28039fc-9b8e-457c-985c-2071947ea5b6.zip [stream]
+[debug] [2022-11-09T05:10:04.006Z] <<< [apiv2][status] PUT https://storage.googleapis.com/uploads-165489373824.us-central1.cloudfunctions.appspot.com/f28039fc-9b8e-457c-985c-2071947ea5b6.zip 200
+[debug] [2022-11-09T05:10:04.007Z] <<< [apiv2][body] PUT https://storage.googleapis.com/uploads-165489373824.us-central1.cloudfunctions.appspot.com/f28039fc-9b8e-457c-985c-2071947ea5b6.zip [omitted]
+[info] ✔  functions: functions folder uploaded successfully 
+[info] i  functions: creating Node.js 16 function createStripeCheckout(us-central1)... 
+[debug] [2022-11-09T05:10:04.015Z] >>> [apiv2][query] POST https://cloudfunctions.googleapis.com/v1/projects/ryansmeats-697f9/locations/us-central1/functions [none]
+[debug] [2022-11-09T05:10:04.015Z] >>> [apiv2][body] POST https://cloudfunctions.googleapis.com/v1/projects/ryansmeats-697f9/locations/us-central1/functions {"name":"projects/ryansmeats-697f9/locations/us-central1/functions/createStripeCheckout","sourceUploadUrl":"https://storage.googleapis.com/uploads-165489373824.us-central1.cloudfunctions.appspot.com/f28039fc-9b8e-457c-985c-2071947ea5b6.zip?GoogleAccessId=service-637964071752@gcf-admin-robot.iam.gserviceaccount.com&Expires=1667972403&Signature=I9aE4%2BCZzZj0g6Va5uo1RGqWeKcGd8UIQdHfMFC5OwzX%2BA0KN403O7LsI2Rwic4Ya0wiEphR88cy14Mt00mJAjQekOeeyP80%2FXJLw5dwBDHIa16W%2BFyfArxQbncpIqL6e2Y3wr%2B03pHEDVPc325%2FIONNluJTgXAzh%2FqAZXGf3gy6VGnGt6cGmFaf5%2BJEluSKgLQEvT4cUO6jRZNwXkiQWx4dBchYTczhZpBKs138%2BsdxjTQ5IQIlroacdqWf3E3Icrf7DG3OWsyGE69%2BmMzDqToTq6mINgOzNY3zUR1jY9%2Fc3sedeDkK21RjDDRazQ2PZCyxzyERNkD7H%2FXi35Za%2BA%3D%3D","entryPoint":"createStripeCheckout","runtime":"nodejs16","dockerRegistry":"ARTIFACT_REGISTRY","labels":{"deployment-tool":"cli-firebase","deployment-callable":"true"},"httpsTrigger":{"securityLevel":"SECURE_ALWAYS"},"environmentVariables":{"FIREBASE_CONFIG":"{\"projectId\":\"ryansmeats-697f9\",\"storageBucket\":\"ryansmeats-697f9.appspot.com\",\"locationId\":\"us-central\"}","GCLOUD_PROJECT":"ryansmeats-697f9"}}
+[debug] [2022-11-09T05:10:04.315Z] <<< [apiv2][status] POST https://cloudfunctions.googleapis.com/v1/projects/ryansmeats-697f9/locations/us-central1/functions 403
+[debug] [2022-11-09T05:10:04.316Z] <<< [apiv2][body] POST https://cloudfunctions.googleapis.com/v1/projects/ryansmeats-697f9/locations/us-central1/functions {"error":{"code":403,"message":"Unable to retrieve the repository metadata for projects/ryansmeats-697f9/locations/us-central1/repositories/gcf-artifacts. Ensure that the Cloud Functions service account has 'artifactregistry.repositories.list' and 'artifactregistry.repositories.get' permissions. You can add the permissions by granting the role 'roles/artifactregistry.reader'.","status":"PERMISSION_DENIED"}}
+[warn] ⚠  functions: failed to create function projects/ryansmeats-697f9/locations/us-central1/functions/createStripeCheckout 
+[error] Failed to create function projects/ryansmeats-697f9/locations/us-central1/functions/createStripeCheckout
+[debug] [2022-11-09T05:10:04.324Z] Total Function Deployment time: 307
+[debug] [2022-11-09T05:10:04.324Z] 1 Functions Deployed
+[debug] [2022-11-09T05:10:04.324Z] 1 Functions Errored
+[debug] [2022-11-09T05:10:04.324Z] 0 Function Deployments Aborted
+[debug] [2022-11-09T05:10:04.324Z] Average Function Deployment time: 306
+[info] 
+[info] Functions deploy had errors with the following functions:
+	createStripeCheckout(us-central1)
+[info] i  functions: cleaning up build files... 
+[debug] [2022-11-09T05:10:04.402Z] >>> [apiv2][query] DELETE https://artifactregistry.googleapis.com/v1beta2/projects/ryansmeats-697f9/locations/us-central1/repositories/gcf-artifacts/packages/create_stripe_checkout [none]
+[debug] [2022-11-09T05:10:04.404Z] >>> [apiv2][query] GET https://us.gcr.io/v2/ryansmeats-697f9/gcf/us-central1/tags/list [none]
+[debug] [2022-11-09T05:10:04.692Z] <<< [apiv2][status] DELETE https://artifactregistry.googleapis.com/v1beta2/projects/ryansmeats-697f9/locations/us-central1/repositories/gcf-artifacts/packages/create_stripe_checkout 404
+[debug] [2022-11-09T05:10:04.692Z] <<< [apiv2][body] DELETE https://artifactregistry.googleapis.com/v1beta2/projects/ryansmeats-697f9/locations/us-central1/repositories/gcf-artifacts/packages/create_stripe_checkout {"error":{"code":404,"message":"Package \"projects/ryansmeats-697f9/locations/us-central1/repositories/gcf-artifacts/packages/create_stripe_checkout\" was not found.","status":"NOT_FOUND"}}
+[debug] [2022-11-09T05:10:05.599Z] <<< [apiv2][status] GET https://us.gcr.io/v2/ryansmeats-697f9/gcf/us-central1/tags/list 200
+[debug] [2022-11-09T05:10:05.600Z] <<< [apiv2][body] GET https://us.gcr.io/v2/ryansmeats-697f9/gcf/us-central1/tags/list {"child":[],"manifest":{},"name":"ryansmeats-697f9/gcf/us-central1","tags":[]}
+[debug] [2022-11-09T05:10:05.600Z] Could not find image for function projects/ryansmeats-697f9/locations/us-central1/functions/createStripeCheckout
+[debug] [2022-11-09T05:10:05.601Z] Functions deploy failed.
+[debug] [2022-11-09T05:10:05.601Z] {
+  "endpoint": {
+    "id": "createStripeCheckout",
+    "project": "ryansmeats-697f9",
+    "region": "us-central1",
+    "entryPoint": "createStripeCheckout",
+    "platform": "gcfv1",
+    "runtime": "nodejs16",
+    "callableTrigger": {},
+    "labels": {
+      "deployment-tool": "cli-firebase"
+    },
+    "environmentVariables": {
+      "FIREBASE_CONFIG": "{\"projectId\":\"ryansmeats-697f9\",\"storageBucket\":\"ryansmeats-697f9.appspot.com\",\"locationId\":\"us-central\"}",
+      "GCLOUD_PROJECT": "ryansmeats-697f9"
+    },
+    "codebase": "default"
+  },
+  "op": "create",
+  "original": {
+    "name": "FirebaseError",
+    "children": [],
+    "context": {
+      "function": "projects/ryansmeats-697f9/locations/us-central1/functions/createStripeCheckout"
+    },
+    "exit": 1,
+    "message": "Failed to create function projects/ryansmeats-697f9/locations/us-central1/functions/createStripeCheckout",
+    "original": {
+      "name": "FirebaseError",
+      "children": [],
+      "context": {
+        "body": {
+          "error": {
+            "code": 403,
+            "message": "Unable to retrieve the repository metadata for projects/ryansmeats-697f9/locations/us-central1/repositories/gcf-artifacts. Ensure that the Cloud Functions service account has 'artifactregistry.repositories.list' and 'artifactregistry.repositories.get' permissions. You can add the permissions by granting the role 'roles/artifactregistry.reader'.",
+            "status": "PERMISSION_DENIED"
+          }
+        },
+        "response": {
+          "statusCode": 403
+        }
+      },
+      "exit": 1,
+      "message": "HTTP Error: 403, Unable to retrieve the repository metadata for projects/ryansmeats-697f9/locations/us-central1/repositories/gcf-artifacts. Ensure that the Cloud Functions service account has 'artifactregistry.repositories.list' and 'artifactregistry.repositories.get' permissions. You can add the permissions by granting the role 'roles/artifactregistry.reader'.",
+      "status": 403
+    },
+    "status": 500
+  }
+}
+[debug] [2022-11-09T05:10:05.681Z] Error: Failed to create function createStripeCheckout in region us-central1
+    at /usr/local/lib/node_modules/firebase-tools/lib/deploy/functions/release/fabricator.js:42:11
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Fabricator.createV1Function (/usr/local/lib/node_modules/firebase-tools/lib/deploy/functions/release/fabricator.js:169:32)
+    at async Fabricator.createEndpoint (/usr/local/lib/node_modules/firebase-tools/lib/deploy/functions/release/fabricator.js:120:13)
+    at async handle (/usr/local/lib/node_modules/firebase-tools/lib/deploy/functions/release/fabricator.js:79:17)
+[error] 
+[error] Error: There was an error deploying functions
