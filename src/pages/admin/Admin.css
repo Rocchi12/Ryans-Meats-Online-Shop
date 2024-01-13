@@ -1,0 +1,51 @@
+
+.adminPage{
+    width: 700px;
+    background-color: rgb(255, 205, 115);
+    margin: 0 auto;
+    margin-top: 150px;
+    height: 1300px;
+    padding: 10px 0;
+    border-radius: 5px;
+    position: relative;
+
+
+}
+.adminPage h2 {
+    text-align: center;
+    font-size: 40px; 
+}
+
+.adminPage ul {
+    margin: 0;
+    padding: 0;
+    margin-top: 80px;
+}
+.adminPage li {
+    margin-top: 40px;
+    list-style-type: none;
+    text-align: center;
+}
+.adminPage .types {
+    width: 35%;
+
+}
+.adminPage input {
+    width: 50%;
+    height: 30px
+}
+.adminPage textarea {
+    width: 437px;
+    height: 310px;
+    font-family: inherit;
+    font-size: inherit;
+    max-width: 694px;
+    max-height: 290px;
+}
+.adminPage #sub {
+    position:absolute;
+    bottom:30px;
+    left: 120px;
+    padding: 15px 40px;
+    font-weight: bold;
+}

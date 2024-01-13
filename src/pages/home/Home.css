@@ -1,0 +1,375 @@
+.homePage {
+  margin-top: 250px;
+  width: 100%;
+}
+
+/*  conact me stuff*/
+
+.homePage .contactBackground {
+  margin-left: 1%;
+  width: 98%;
+  background-color: rgb(255, 205, 115);
+  height: 660px;
+}
+.homePage .contactBackground .contactMeCont {
+  display: flex;
+  height: 660px;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.homePage .contactBackground .form {
+  margin: auto 0;
+}
+.homePage .contactBackground .contactInfo {
+  width: 400px;
+
+  padding: 0 10px;
+  margin: auto 0;
+}
+
+.homePage .contactBackground .contactInfo h2 {
+  font-size: 50px;
+}
+.homePage .contactBackground .contactInfo p {
+  font-size: 30px;
+}
+
+.homePage .apBackground .aboutProduct {
+  width: 100%;
+  height: 200px;
+}
+/* about product stiff */
+.homePage .apBackground {
+  margin-bottom: 50px;
+  width: 100%;
+  height: 490px;
+  background-color: black;
+}
+.homePage .apBackground p {
+  padding-right: 32px;
+}
+
+.homePage .aboutProduct {
+  max-width: 80%;
+  margin-left: 10%;
+  color: rgb(255, 228, 178);
+  display: flex;
+  font-size: 20px;
+}
+.homePage .productInfo {
+  padding-left: 20px;
+  padding-top: 20px;
+  width: 100%;
+  max-height: 280px;
+}
+.homePage .productImage img {
+  height: 400px;
+  margin: 40px 25px;
+}
+
+@media screen and (max-width: 1780px) {
+  .homePage .aboutProduct {
+    max-width: 100%;
+    color: white;
+    display: flex;
+    font-size: 20px;
+    margin: 0;
+  }
+  .homePage .productImage img {
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 1355px) {
+  .homePage .aboutProduct {
+    flex-wrap: wrap;
+  }
+
+  .homePage .apBackground {
+    height: 800px;
+  }
+  .homePage .productInfo p {
+    height: auto;
+    text-align: center;
+  }
+  .homePage .productImage {
+    margin: 0 auto;
+  }
+  .homePage .productImage img {
+    margin-right: 0;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 755px) {
+  .homePage .productImage {
+    margin: 0;
+  }
+  .homePage .productImage img {
+    margin: 0;
+    width: 100%;
+    height: auto;
+  }
+  .homePage .apBackground {
+    height: 900px;
+  }
+}
+@media screen and (max-width: 530px) {
+  .homePage .contactInfo {
+    margin-left: 20px;
+    text-align: center;
+  }
+  .homePage .contactBackground {
+    margin-bottom: 80px;
+  }
+  .homePage .apBackground {
+    height: 1000px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .homePage .apBackground {
+    height: 1200px;
+  }
+}
+/* ratings stuff */
+
+.homePage .ratings {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.homePage .ratings .ratingsCard {
+  display: flex;
+  width: 420px;
+  height: 450px;
+  flex-direction: column;
+  padding: 20px 44px;
+  justify-content: top;
+  border-radius: 10px;
+  border: 2px solid #000;
+  background: #fee4b4;
+  margin: 25px;
+  margin-bottom: 50px;
+}
+.homePage .ratings .ratingsCard h2 {
+  padding-bottom: 25px;
+  margin: 25px 0;
+  border-bottom: 2px solid #000;
+}
+.homePage .ratings .ratingsCard p {
+  margin-top: 0px;
+}
+
+@media screen and (max-width: 1620px) {
+  .homePage .ratings .last {
+    display: none;
+  }
+}
+@media screen and (max-width: 1125px) {
+  .homePage .ratings {
+    width: 100%;
+    flex-direction: column;
+  }
+  .homePage .ratings .ratingsCard {
+    width: 80%;
+    height: 300px;
+    flex-direction: column;
+    padding: 0px 20px;
+    margin: 10px;
+  }
+  .homePage .ratings .second {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 765px) {
+  .homePage .ratings .ratingsCard {
+    display: none;
+  }
+}
+/* feature stuff */
+
+.homePage .featuredItems {
+  height: fit-content;
+  padding: 10px 0;
+  width: 100%;
+  margin-bottom: 40px;
+  background-color: rgb(255, 228, 178);
+}
+.homePage .featuredItems h3 {
+  margin-bottom: 0;
+  margin-left: 30px;
+  font-size: 22px;
+}
+.homePage .featuredItems {
+  margin-bottom: 40px;
+  font-size: 22px;
+}
+
+.homePage .opener {
+  width: 100%;
+  height: 600px;
+  background-color: rgb(255, 205, 115);
+  margin-bottom: 100px;
+}
+
+@media screen and (max-width: 1056px) {
+  /*  conact me stuff*/
+  .homePage .contactBackground {
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    width: 601px;
+    background-color: rgb(255, 205, 115);
+    height: 805px;
+  }
+
+  .homePage .contactBackground .contactInfo h2 {
+    font-size: 25px;
+  }
+  .homePage .contactBackground .contactInfo p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 605px) {
+  /*  conact me stuff*/
+  .homePage .contactBackground {
+    width: 100%;
+  }
+
+  .homePage .form {
+    width: 100%;
+  }
+}
+
+/*Hero section*/
+.homePage .hero {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 570px;
+  background-color: rgb(255, 228, 178);
+  margin-bottom: 60px;
+}
+.homePage .hero .image {
+  position: relative;
+}
+.homePage .hero img {
+  width: 1700px;
+  height: 570px;
+}
+.homePage .hero .gradient {
+  position: absolute;
+}
+.homePage .hero h1 {
+  color: #fee4b4;
+  font-size: 40px;
+  font-weight: 700;
+}
+.homePage .hero .heroCard {
+  position: absolute;
+  right: 18px;
+  top: calc((50% - 180px));
+  display: flex;
+  width: 537px;
+  height: 260px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.homePage .hero .heroCard button {
+  width: 253px;
+  height: 76px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: 2px solid #3e3e3e;
+  background: #ffcd73;
+  font-size: 25px;
+  font-weight: bold;
+}
+.homePage .hero .heroCard button:hover {
+  background: rgb(255, 228, 178);
+}
+
+@media screen and (max-width: 1700px) {
+  .homePage .hero {
+    background-color: black;
+  }
+  .homePage .hero img {
+    width: 100%;
+    height: 570px;
+    object-fit: cover;
+    object-position: 100% 0%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .homePage .hero .gradient {
+    display: none;
+  }
+  .homePage .hero img {
+    object-fit: cover;
+    object-position: 40% 30%;
+  }
+  .homePage .hero .heroCard {
+    width: 500px;
+    height: 400px;
+    left: calc((50% - 250px));
+    top: calc((50% - 200px));
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+  }
+  .homePage .hero .heroCard button {
+    width: 200px;
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .homePage .hero {
+    height: 400px;
+  }
+  .homePage .hero img {
+    height: 400px;
+  }
+  .homePage .hero h1 {
+    color: #fee4b4;
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .homePage .hero .heroCard {
+    width: 400px;
+    height: 250px;
+    left: calc((50% - 200px));
+    top: calc((50% - 125px));
+  }
+}
+@media screen and (max-width: 420px) {
+  .homePage .hero {
+    height: 400px;
+  }
+  .homePage .hero img {
+    height: 400px;
+  }
+  .homePage .hero h1 {
+    color: #fee4b4;
+    font-size: 25px;
+    font-weight: 700;
+  }
+  .homePage .hero .heroCard {
+    width: 300px;
+    height: 250px;
+    left: calc((50% - 150px));
+  }
+  .homePage .hero .heroCard button {
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+  }
+}

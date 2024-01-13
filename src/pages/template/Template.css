@@ -1,0 +1,143 @@
+.template{
+    position: relative;
+    margin: 0 auto;
+    margin-top: 220px;
+    width: 600px;
+}
+
+.template h2{
+    margin: 0;
+    font-size: 40px;
+}
+#price{
+    margin: 0;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.template .imageCont{
+    position: relative;
+}
+.template .image{
+    width: 600px;
+    height: 400px;
+    border: 4px black solid;
+    object-fit:cover;
+}
+.template .buttonLeft{
+    position: absolute;
+    width: 50px;
+    top: 200px;
+    left:20px;
+    transform: scaleX(-1);
+
+}
+.template .buttonRight{
+    position: absolute;
+    right: 20px;
+    top:200px;
+    width: 50px;
+    
+}
+.template .itemDetails{
+    width: 100%;
+    padding: 10px 0;
+    margin: 0;
+    list-style-type: "";
+    height: 400px;
+}
+.template .itemDetails h3{
+    font-size: 20px;
+}
+.template .itemDetails li{
+    margin-left: 20px;
+}
+
+
+.template .description{
+    margin-top: 20px;
+}
+.template .buttonCont{
+    width:100%;
+    position:relative;
+}
+.template .buttonCont button{
+    position:absolute;
+    right: 0;
+    top:0;
+    height:44.36px;
+}
+.template .buttonCont a{
+    position:absolute;
+    left: 0;
+    top:0;
+}
+#gobackbtn{
+    position:absolute;
+    top: 15px;
+    right: 0;
+}
+.template .quantitySpef {
+    position: absolute;
+    left:0;
+    top:0;
+    font-size: 1em;
+    
+}
+.template .quantitySpef input{
+    padding: 8px 12px;
+    
+}
+
+
+@media screen and (max-width: 655px){
+
+    .template{
+        width: 420px;
+    }
+    .template .image{
+        width: 420px;
+        height: 280px;
+    }
+    .template .buttonLeft{
+        top: 115px;
+    
+    }
+    .template .buttonRight{
+        top:115px;
+        
+    }
+
+
+}
+
+@media screen and (max-width: 430px){
+
+    .template{
+        width: 300px;
+    }
+    .template .image{
+        width: 300px;
+        height: 200px;
+    }
+    .template .buttonLeft{
+        top: 75px;
+    
+    }
+    .template .buttonRight{
+        top:75px;
+        
+    }
+    .template h2{
+        font-size: 30px;
+    }
+
+    .template .quantitySpef input{
+        width: 40px;
+        
+    }
+
+
+}
+
+

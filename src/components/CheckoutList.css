@@ -1,0 +1,77 @@
+@keyframes openRemove {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 130px;
+  }
+}
+
+.checkoutList .slideList {
+  position: relative;
+  width: 100%;
+  height: 170px;
+  background-color: rgb(255, 228, 178);
+  margin: 0;
+  list-style-type: "";
+  display: flex;
+  border: 1px solid black;
+  margin-bottom: 5px;
+}
+.checkoutList .inf {
+  margin-top: 17px;
+  margin-left: 13px;
+}
+
+.checkoutList {
+  margin-bottom: 20px;
+}
+
+.checkoutList h4 {
+  margin: 0;
+}
+.checkoutList .removeButton {
+  display: none;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 100%;
+  background-color: rgb(255, 225, 171);
+  border: none;
+  font-size: 20px;
+  width: 130px;
+  animation-name: openRemove;
+  animation-duration: 0.5s;
+  border-left: 2px solid black;
+
+  overflow: hidden;
+}
+
+.checkoutList .slideList .itemImage {
+  height: 100%;
+}
+.checkoutList .slideList:hover .removeButton {
+  display: inline;
+}
+@media screen and (max-width: 610px) {
+  .checkoutList .itemImage {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  @keyframes openRemove {
+    from {
+      width: 0px;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  .checkoutList .removeButton {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 225, 171);
+  }
+}

@@ -1,0 +1,48 @@
+.faq{
+  margin-top: 250px;
+  width: 100%;
+}
+.faq .title{
+  display: flex;
+  margin-bottom: 60px;
+  width: 100%;
+  background-color: black;
+  color: rgb(255, 228, 178);
+  height: fit-content;
+  padding: 5px 0;
+  justify-content: center;
+  align-items: center;
+}
+.faq .title h1{
+  margin: 0;
+  font-size: 50px;
+  margin: 0 20px;
+}
+.faq .title p{
+  margin: 0 20px;
+  margin-bottom: 15px;
+}
+
+.faq .qa-background{ 
+  margin-left: 5%;
+  width: 90%;
+  border-bottom: 1px solid black;
+  
+}
+.faq .question{
+  background-color: rgb(255, 228, 178);
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.faq .question img{
+  width: 40px;
+  height: 40px;
+  transform: scale();
+}
+.faq .answer{
+  padding: 10px 20px;
+  background-color: rgb(255, 236, 202);
+}

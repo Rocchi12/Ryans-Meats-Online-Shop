@@ -1,0 +1,72 @@
+.checkout{
+    margin-top: 255px;
+    min-height: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+
+.checkout .showCheckout{
+    width: 40%;
+}
+
+.checkout .checkoutList .slideList{
+
+    background-color: rgb(255, 205, 115);
+    margin-bottom: 10px;
+    border: none;
+
+}
+
+.checkout .checkoutList .removeButton{
+
+    background-color: rgb(255, 225, 171);
+
+
+}
+.checkout .spacing{
+    width:40%;
+    display:flex;
+    justify-content: center;
+}
+.checkout .checkoutFormCont{
+    background-color: rgb(255, 205, 115);
+    width: 494px;
+    display:flex;
+    justify-content: center;
+    height: fit-content;
+}
+.checkout .checkoutForm{
+    width: 445.98px;
+}
+.checkout .checkoutForm p{
+    text-align: center;
+}
+
+@media screen and (max-width: 1250px){
+
+    .checkout .showCheckout{
+        width: 90%;
+    }
+    .checkout .spacing{
+        width:90%;
+        display:flex;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width: 550px){
+
+    .checkout .checkoutFormCont{
+        width: 100%;
+    }
+    .checkout .checkoutForm{
+        width: 100%;
+    }
+    .checkout .checkoutForm h3{
+        margin-left: 10px;
+    }
+
+
+}

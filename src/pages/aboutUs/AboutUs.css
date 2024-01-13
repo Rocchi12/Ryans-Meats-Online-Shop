@@ -1,0 +1,84 @@
+.aboutUs {
+  margin-top: 255px;
+}
+
+.aboutUs .title {
+  display: flex;
+  margin-bottom: 50px;
+  width: 100%;
+  background-color: black;
+  color: rgb(255, 228, 178);
+  height: fit-content;
+  padding: 5px 0;
+  justify-content: left;
+  align-items: center;
+}
+.aboutUs .title h1 {
+  margin: 0;
+  font-size: 50px;
+  margin: 0 20px;
+}
+.aboutUs .title p {
+  margin: 0 20px;
+  margin-bottom: 15px;
+}
+
+.aboutUs .text {
+  display: flex;
+  margin-bottom: 50px;
+  width: 40%;
+  background-color: rgb(255, 228, 178);
+  height: fit-content;
+  padding: 10px 0;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.aboutUs .content p {
+  margin: 25px;
+}
+
+.aboutUs .content {
+  display: flex;
+  justify-content: space-around;
+}
+.aboutUs .content img {
+  width: 40%;
+  height: fit-content;
+}
+
+.aboutUs .small {
+  display: none;
+}
+
+@media screen and (max-width: 1750px) {
+  .aboutUs .content {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .aboutUs .content img {
+    width: 900px;
+    height: fit-content;
+    margin-bottom: 45px;
+  }
+  .aboutUs .text {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .aboutUs .content .small {
+    width: 90%;
+    display: block;
+    border: 2px solid;
+  }
+  .aboutUs .content .big {
+    display: none;
+  }
+  .aboutUs .text {
+    width: 90%;
+  }
+}

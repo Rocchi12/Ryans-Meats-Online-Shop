@@ -1,0 +1,36 @@
+.itemList {
+    min-height: 1200px;
+}
+.itemList ul {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+}
+.itemList a {
+    margin: 10px;
+    background-color: rgb(255, 228, 178);
+    padding: 10px;
+    border-radius: 4px;
+}
+.itemList a:hover {
+    background-color: rgb(255, 228, 178);
+}
+
+.itemList a img{
+    border:black solid 2px;
+    width:300px;
+    height:200px;
+    object-fit:cover;
+    border-radius: 4px;
+    background-color: white;
+}
+.itemList h2{
+    margin-bottom: 0;
+    width:303px;
+}
+.itemList .price{
+    margin-top: 0;
+}
+
+

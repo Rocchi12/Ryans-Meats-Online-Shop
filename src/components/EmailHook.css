@@ -1,0 +1,97 @@
+.emailHook{
+    width: 600px;
+    background-color: rgba(255, 205, 115);
+    margin: 0;
+    padding: 0;
+    left: 0;
+}
+.emailHook form{
+    margin: 0;
+}
+.emailHook div{
+    margin: 20px 0;
+    margin-left: 75px;
+    list-style-type: none;
+}
+.emailHook .fName{
+    margin-right: 30px;
+}
+.emailHook input{
+    background-color: rgba(255, 222, 162);
+    width: 200px;
+    height: 30px;
+    border: black 2px solid;
+    font-size: 20px;
+}
+.emailHook button{
+    background-color: rgba(255, 222, 162);
+    width: 200px;
+    height: 30px;
+    border: black 2px solid;
+    font-size: 20px;
+}
+.emailHook input::placeholder{
+    color: rgba(0,0,0,0.7);
+}
+.emailHook .question::placeholder{
+    color: rgba(0,0,0,0.7);
+}
+.emailHook .question{
+    background-color: rgba(255, 222, 162);;
+    width: 441px;
+    height: 400px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 4px;
+    resize: none;
+    font-size: 20px;
+    font-family: inherit;
+}
+.emailHook .email{
+    width: 439px;
+}
+#subbut{
+    height:40px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 605px){
+    /*  conact me stuff*/
+    .emailHook div{
+        margin: 0;
+        margin-left: 5%;
+        margin-bottom: 20px;
+    }
+    .emailHook{
+        width: 100%;
+    }
+
+    .emailHook .question{
+        width: 90%;
+    }
+    .emailHook .email{
+        width: 90%;
+    }
+    .emailHook .fName input{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .emailHook .lName input{
+        width: 90%;
+    }
+    .emailHook .question textarea{
+        width: 90%;
+    }
+
+}
+@media screen and (max-width: 530px){
+    .emailHook .contactInfo{
+        margin-left: 20px;
+        text-align: center;
+    }
+    .emailHook .nameE{
+        margin-left: 5%;
+    }
+
+}
